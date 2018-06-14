@@ -20,7 +20,7 @@ public class InformacoesUsuarioPageObjectsTest {
 
     @Before
     public void setUp(){
-        navegador = Web.createChrome();
+        navegador = Web.createBrowserStack();
     }
 
     @Test
@@ -47,7 +47,7 @@ public class InformacoesUsuarioPageObjectsTest {
 
     @After
     public void tearDown(){
-        //navegador.quit();
+        navegador.quit();
     }
 
 
